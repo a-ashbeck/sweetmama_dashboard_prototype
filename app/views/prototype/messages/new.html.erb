@@ -1,0 +1,32 @@
+<h1>New Message</h1>
+
+<form>
+  <div class="form-group">
+    <label for="messageTitle">Title</label>
+    <input type="text" class="form-control" placeholder="Enter title...">
+  </div>
+  <div class="form-group">
+    <label for="messageType">Type</label>
+    <select class="form-control">
+      <option>Appointment Reminder</option>
+      <option>Read Only</option>
+      <option>External Link</option>
+      <option>Multiple Choice</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="messageBody">Message Body</label>
+    <textarea class="form-control" rows="3"></textarea>
+  </div>
+  <div class="form-group">
+    <label for="messageResponse1">Response 1</label>
+    <input type="text" class="form-control" placeholder="First response...">
+  </div>
+  <div class="form-group">
+    <label for="messageResponse2">Response 2</label>
+    <input type="text" class="form-control" placeholder="Second response...">
+  </div>
+
+  <%= link_to "Save", prototype_messages_path, class: "btn btn-primary" %>
+  <%= link_to "Cancel", prototype_messages_path, class: "btn btn-danger" %>
+</form>
