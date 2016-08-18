@@ -13,10 +13,25 @@
       <li class="nav-item">
         <%= link_to 'Messages', prototype_messages_path, class: 'nav-link' %>
       </li>
+      <li class="nav-item">
+        <%= link_to 'Notifications', prototype_notifications_path, class: 'nav-link' %>
+      </li>
+      <li class="nav-item">
+        <%= link_to 'Participant Activity', prototype_participant_activities_path, class: 'nav-link' %>
+      </li>
+      <li class="nav-item pull-xs-right">
+        <%= link_to "Sign Out", prototype_logins_path, class: "btn btn-info" %>
+      </li>
     </ul>
   </nav>
 
-<%= yield %>
+  <br />
+
+  <div class="row">
+    <div class="col-xs-1"></div>
+    <div class="col-xs-10"><%= yield %></div>
+    <div class="col-xs-1"></div>
+  </div>
 
 </body>
 </html>
