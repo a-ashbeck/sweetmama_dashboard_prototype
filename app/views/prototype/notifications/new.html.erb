@@ -9,12 +9,18 @@
     <label for="participantId">Participant ID</label>
     <input type="text" class="form-control" placeholder="Enter Participant ID...">
   </div>
-  <div>
-    <label for="sendSchedule">Notify now or later?</label>
-    <input type="radio" name="nowOrLater" value="sendNow">Send Now
-    <input type="radio" name="nowOrLater" value="sendLater">Schedule
+  <div class="form-group">
+    <label for="sendSchedule">Is this an Appointment Reminder?</label>
+    <div class="radio-inline">
+      <label class="form-check-inline">
+        <input type="radio" name="nowOrLater" value="sendNow"> Yes
+      </label>
+      <label class="form-check-inline">
+        <input type="radio" name="nowOrLater" value="sendLater"> No
+      </label>
+    </div>
   </div>
-  <div>
+  <div class="form-group">
     <label for="dateSend">Send Date</label>
     <input type="date" placeholder="Enter date to be sent...">
     <br />
