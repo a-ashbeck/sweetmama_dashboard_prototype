@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   namespace :prototype do
-    resources :messages, only: [:index, :new, :create]
+    resources :messages, only: [:index, :new, :create, :show]
     resource :landings, only: :show
     resources :notifications, only: [:index, :new, :create]
     resources :participant_activities, only: :index
